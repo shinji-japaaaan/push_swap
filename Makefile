@@ -1,5 +1,5 @@
 NAME = push_swap
-SRC = main.c stack_operations.c bubble_sort.c parse.c
+SRC = main.c stack_operations.c quick_sort.c parse.c
 OBJ = $(SRC:.c=.o)
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror

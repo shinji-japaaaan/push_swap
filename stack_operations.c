@@ -70,3 +70,13 @@ void print_stack(t_stack *stack) {
         current = current->next;
     }
 }
+
+int stack_length(t_stack *stack) {
+    int length = 0;
+    t_node *current = stack->top;
+    while (current) {
+        length++;
+        current = current->next;
+    }
+    return length;
+}

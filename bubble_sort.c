@@ -2,16 +2,6 @@
 
 #include "push_swap.h"
 
-int stack_length(t_stack *stack) {
-    int length = 0;
-    t_node *current = stack->top;
-    while (current) {
-        length++;
-        current = current->next;
-    }
-    return length;
-}
-
 void print_operation(const char *op) {
     printf("%s\\n", op);
 }

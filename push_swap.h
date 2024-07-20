@@ -29,6 +29,7 @@ void reverse_rotate(t_stack *stack);
 void print_stack(t_stack *stack);
 void bubble_sort(t_stack *a, t_stack *b);
 void parse_input(int argc, char **argv, t_stack *a);
-void quick_sort(t_stack *stack, int low, int high);
+void quick_sort(t_stack *stack);
+int stack_length(t_stack *stack);
 
 #endif
