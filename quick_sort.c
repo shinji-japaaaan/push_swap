@@ -1,23 +1,16 @@
-// quick_sort.c
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   quick_sort.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/21 13:05:59 by root              #+#    #+#             */
+/*   Updated: 2024/07/21 14:39:02 by root             ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "push_swap.h"
-
-// スタックの中の値を配列にコピー
-void stack_to_array(t_stack *stack, int arr[]) {
-    t_node *current = stack->top;
-    int i = 0;
-    while (current) {
-        arr[i++] = current->value;
-        current = current->next;
-    }
-}
-
-// 配列をスタックにコピー
-void array_to_stack(int arr[], int len, t_stack *stack) {
-    for (int i = len - 1; i >= 0; i--) {
-        push(stack, arr[i]);
-    }
-}
 
 // スワップ関数
 void swap_int(int *a, int *b) {
@@ -50,12 +43,16 @@ void quick_sort_array(int arr[], int low, int high) {
     }
 }
 
-// スタックをクリアする関数
-void clear_stack(t_stack *stack) {
-    while (stack->top) {
-        pop(stack);
+// スタックの中の値を配列にコピー
+void stack_to_array(t_stack *stack, int arr[]) {
+    t_node *current = stack->top;
+    int i = 0;
+    while (current) {
+        arr[i++] = current->value;
+        current = current->next;
     }
 }
+
 
 // スタックをクイックソートする関数
 void quick_sort(t_stack *stack) {
@@ -69,11 +66,17 @@ void quick_sort(t_stack *stack) {
     quick_sort_array(arr, 0, len - 1);
 
     // スタックをクリアしてソートされた配列をプッシュ
-    clear_stack(stack);
-    array_to_stack(arr, len, stack);
-
+    while (stack->top) {
+        pop(stack);
+    }
+    // 配列をスタックにコピー
+    for (int i = len - 1; i >= 0; i--) {
+        push(stack, arr[i]);
+    }
     free(arr);
 }
+
+
 
 
 
