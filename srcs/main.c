@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:08:16 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/17 08:46:12 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 14:24:32 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	main(int argc, char **argv)
 	}
 	if (!check_sorted(a))
 		sort_stack(&a);
-	ft_print_stack(a, "a");
 	ft_free(&a);
 	return (0);
 }

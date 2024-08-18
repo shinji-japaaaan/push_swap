@@ -6,27 +6,29 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:10:42 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 11:10:43 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 12:22:08 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void ft_print_stack(t_stack *stack, const char *stack_name)
+void	ft_print_stack(t_stack *stack, const char *stack_name)
 {
-    t_stack *current = stack;
-    
-    printf("%s:\n", stack_name);
-    while (current)
-    {
-        printf("%ld ", current->nbr);
-        current = current->next;
-    }
-    printf("\n");
+	t_stack	*current;
+
+	current = stack;
+	printf("%s:\n", stack_name);
+	while (current)
+	{
+		printf("%ld ", current->nbr);
+		current = current->next;
+	}
+	printf("\n");
 }
 
-void display_error(void) {
-    write(2, "Error\n", 6);
+void	display_error(void)
+{
+	write(2, "Error\n", 6);
 	exit(1);
 }
 

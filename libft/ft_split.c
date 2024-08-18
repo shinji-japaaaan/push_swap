@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 11:39:54 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 10:35:53 by root             ###   ########.fr       */
+/*   Updated: 2024/08/18 12:26:30 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ static int	count_words(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int		   count;
+	int		count;
 	char	**result;
 
 	if (s == NULL)

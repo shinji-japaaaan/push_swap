@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:07:53 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 11:07:56 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 14:26:22 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,15 @@ typedef struct s_stack
 }	t_stack;
 
 typedef struct s_cost_info {
-    int cost;
-    int nbr;
-    int operation;
-} t_cost_info;
-
-void ft_print_stack(t_stack *stack, const char *stack_name);
+	int	cost;
+	int	nbr;
+	int	operation;
+}	t_cost_info;
 
 void		ft_add_back(t_stack **stack, t_stack *stack_new);
 t_stack		*ft_stack_new(int content);
 int			checkup(t_stack *a);
-void 		display_error(void);
+void		display_error(void);
 void		ft_free(t_stack **lst);
 t_stack		*ft_lstlast(t_stack *lst);
 void		ra(t_stack **a);
@@ -70,8 +68,8 @@ int			case_rarb(t_stack *a, t_stack *b, int c);
 int			case_rrarrb(t_stack *a, t_stack *b, int c);
 int			case_rrarb(t_stack *a, t_stack *b, int c);
 int			case_rarrb(t_stack *a, t_stack *b, int c);
-t_cost_info get_costinfo_ab(t_stack *a, t_stack *b);
-t_cost_info get_costinfo_ba(t_stack *a, t_stack *b);
+t_cost_info	get_costinfo_ab(t_stack *a, t_stack *b);
+t_cost_info	get_costinfo_ba(t_stack *a, t_stack *b);
 int			apply_rarb(t_stack **a, t_stack **b, int c, char s);
 int			apply_rrarrb(t_stack **a, t_stack **b, int c, char s);
 int			apply_rrarb(t_stack **a, t_stack **b, int c, char s);
@@ -79,6 +77,7 @@ int			apply_rarrb(t_stack **a, t_stack **b, int c, char s);
 void		rrb(t_stack **b);
 t_stack		*input(int argc, char **argv);
 void		sort_till_3(t_stack **stack_a, t_stack **stack_b);
-int	ft_atoi2(const char *str);
+int			ft_atoi2(const char *str);
+void	ft_print_stack(t_stack *stack, const char *stack_name);
 
 #endif

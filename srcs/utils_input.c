@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:10:16 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 11:10:18 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 14:04:53 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ void	all_free2(char **lst)
 
 t_stack	*argc_2(char **argv)
 {
-	t_stack	   *a;
+	t_stack	*a;
 	char	**tmp;
-	int			i;
-	int			j;
+	int		i;
+	int		j;
 
 	a = NULL;
 	i = 0;
@@ -58,8 +58,11 @@ t_stack	*input(int argc, char **argv)
 	i = 1;
 	a = NULL;
 	if (argc < 2)
+	{
+		ft_putstr_fd("Error\n", 2);
 		exit(0);
-	if (argc == 2)
+	}
+	else if (argc == 2)
 		a = argc_2(argv);
 	else
 	{

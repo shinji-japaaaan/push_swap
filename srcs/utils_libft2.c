@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:10:33 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 11:19:21 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 12:17:17 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,3 @@ int	ft_atoi2(const char *str)
 		display_error();
 	return (sign * i);
 }
-
