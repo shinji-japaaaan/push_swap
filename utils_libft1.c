@@ -1,40 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   operations_3.c                                     :+:      :+:    :+:   */
+/*   utils_libft1.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/11 11:08:59 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 11:09:02 by sishizaw         ###   ########.fr       */
+/*   Created: 2024/08/11 11:10:24 by sishizaw          #+#    #+#             */
+/*   Updated: 2024/08/18 20:23:52 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
-void	rb(t_stack **b)
+t_stack	*ft_lstlast(t_stack *lst)
 {
-	t_stack	*tmp;
-
-	if (!*b || !(*b)->next)
-		return ;
-	tmp = *b;
-	*b = ft_lstlast(*b);
-	(*b)->next = tmp;
-	*b = tmp->next;
-	tmp->next = NULL;
-	write(1, "rb\n", 3);
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }
 
-void	ft_sb(t_stack **b)
+int	ft_lstsize(t_stack *lst)
 {
-	t_stack	*tmp;
+	size_t	i;
 
-	if (!*b || !((*b)->next))
-		return ;
-	tmp = *b;
-	*b = (*b)->next;
-	tmp->next = (*b)->next;
-	(*b)->next = tmp;
-	write(1, "sb\n", 3);
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }

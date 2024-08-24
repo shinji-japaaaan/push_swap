@@ -6,7 +6,7 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:07:53 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/18 14:26:22 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/24 09:02:01 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <stdbool.h>
-# include "./libft/libft.h"
+# include "libft/libft.h"
 
 typedef struct s_stack
 {
@@ -78,6 +78,6 @@ void		rrb(t_stack **b);
 t_stack		*input(int argc, char **argv);
 void		sort_till_3(t_stack **stack_a, t_stack **stack_b);
 int			ft_atoi2(const char *str);
-void	ft_print_stack(t_stack *stack, const char *stack_name);
+void		ft_print_stack(t_stack *stack, const char *stack_name);
 
 #endif

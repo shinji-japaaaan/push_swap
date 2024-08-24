@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:09:34 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/11 11:09:36 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 20:23:52 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 int	case_rarb(t_stack *a, t_stack *b, int c)
 {

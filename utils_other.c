@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:10:42 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/18 12:22:08 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 20:23:52 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	ft_print_stack(t_stack *stack, const char *stack_name)
 {

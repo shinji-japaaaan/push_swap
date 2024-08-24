@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:10:33 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/18 12:17:17 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 20:23:52 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	ft_add_back(t_stack **stack, t_stack *stack_new)
 {

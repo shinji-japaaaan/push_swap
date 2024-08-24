@@ -6,11 +6,11 @@
 /*   By: sishizaw <sishizaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/11 11:09:19 by sishizaw          #+#    #+#             */
-/*   Updated: 2024/08/18 14:27:12 by sishizaw         ###   ########.fr       */
+/*   Updated: 2024/08/18 20:23:52 by sishizaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../push_swap.h"
+#include "push_swap.h"
 
 void	sort_stack_three(t_stack **stack_a)
 {
@@ -111,8 +111,4 @@ void	sort_stack(t_stack **stack_a)
 				rra(stack_a);
 		}	
 	}
-	printf("stack_a\n");
-	ft_print_stack(*stack_a, "a");
-	printf("stack_b\n");
-	ft_print_stack(stack_b, "b");
 }
